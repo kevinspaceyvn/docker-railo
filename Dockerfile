@@ -11,11 +11,10 @@ RUN wget http://www.getrailo.org/down.cfm?item=/railo/remote/download42/4.2.1.00
 RUN chmod 744 railo.run
 
 # Run Railo Installer
-RUN ./railo.run --mode unattended --railopass "changeme"
+RUN ./railo.run --mode unattended --railopass "123456"
 #ADD install_railo.sh /install_railo.sh
 #RUN /install_railo.sh
 ADD server.xml /opt/railo/tomcat/conf/server.xml
-#RUN service apache2 restart
 
 # Add image configuration and scripts
 ADD run.sh /run.sh
