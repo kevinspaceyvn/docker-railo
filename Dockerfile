@@ -3,7 +3,7 @@ MAINTAINER Daniel Mahon <daniel@mahonstudios.com>
 
 # Install packages
 RUN apt-get -y update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
+#RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install git wget expect
 
 # Get Railo
